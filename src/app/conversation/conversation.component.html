@@ -1,0 +1,18 @@
+<div class='level has-text-white' id='name'>
+	<div class='level-item'>{{ contact.name }}</div>
+	<span class="icon is-small is-right is-pulled-right">
+	  <i class="fa fa-gear"></i>
+	</span>
+</div>
+
+<div id='messages'>
+	<ng-container *ngFor='let message of contact.messages'>
+		<message [message]='message'></message>
+	</ng-container>
+</div>
+
+<div class='level-item has-text-centered' id='reply'>
+	<div class='control has-icons-right'>
+		<textarea class='input is-small has-text-light' rows='2'></textarea>
+	</div>
+</div>

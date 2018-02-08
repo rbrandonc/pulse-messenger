@@ -1,0 +1,29 @@
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-32x32" *ngIf='imageSource()'>
+      <img src="{{imageSource()}}">
+    </p>
+
+    <p class="is-size-7 has-text-grey" *ngIf='!imageSource()'>
+      {{ date }}
+    </p>
+  </figure>
+
+  <div class="media-content has-text-light has-text-center" [class.pad-left]='!imageSource()'>
+    <div class="content">
+      <p class='is-size-7'>
+        {{ message.content }}
+      </p>
+    </div>
+  </div>
+
+   <figure class="media-right">
+    <p class="image is-32x32"  *ngIf='!imageSource()'>
+      <img src="./assets/me.png">
+    </p>
+
+    <p class="is-size-7 has-text-grey" *ngIf='imageSource()'>
+      {{ date }}
+    </p>
+  </figure>
+</article>

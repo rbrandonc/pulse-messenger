@@ -1,0 +1,20 @@
+<div class='level is-marginless' id='title'>
+	<div class='level-left'>
+		<div class='level-item has-text-white'>Contacts</div>
+	</div>
+
+	<div class='level-right'>
+		<div class='level-item has-text-white' id='new'>+</div>
+	</div>
+</div>
+
+
+<ng-container *ngFor='let c of contacts; let i = index'>
+	<hr *ngIf='i != 0'>
+	<div class='level is-marginless' [class.selected]='selected(c.name)'>
+		<contact
+			[contact]='c'>
+		</contact>
+	</div>
+</ng-container>
+

@@ -1,0 +1,20 @@
+#menu-icon {
+	fill: white;
+}
+
+.level {
+	padding: 20px;
+	background-color: rgba(0, 0, 0, .5);
+	border-top-left-radius: 10px;
+	height: calc(15vh - 20px);
+	/*box-shadow: 0px 5px 6px #00000061;*/
+}
+
+#logo {
+	height: 3em;
+	filter: drop-shadow(0px 0px 20px #000);
+}
+
+#menu {
+	height: 1.5em;
+}

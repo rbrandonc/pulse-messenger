@@ -1,0 +1,24 @@
+.image img {
+	border-radius: 24px !important;
+	box-shadow: 0px 0px 20px #000000;
+}
+
+.media {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 15px;
+}
+
+.media-content {
+	padding-left: 20px;
+	padding-right: 100px;
+}
+
+.pad-left {
+	padding-left: 100px;
+	padding-right: 20px;
+}
+
+.has-text-center {
+	/*text-align: center;*/
+}

@@ -1,0 +1,80 @@
+#reply {
+	height: calc(10vh);
+}
+
+#reply textarea {
+	width: 100%;
+}
+
+#reply textarea {
+	border-radius: 15px !important;
+	/*padding: 5px;*/
+	box-shadow: 0px 0px 8px #00000096;
+	background-color: rgba(0,0,0,.7);
+	border: none;
+	width: 100%;
+	height: auto;
+}
+
+textarea:focus, input:focus{
+    outline: none !important;
+    border: none !important;
+}
+
+#reply .level-item {
+	box-shadow: 0px 0px 10px #000000;
+	height: 100%;
+}
+
+#messages {
+	height: calc(85vh - 20px);
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#messages::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+#messages::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.fa {
+    padding-right: 20px;
+}
+
+#name {
+	/*box-shadow: 0px 0px 10px #000000;*/
+	height: 5vh;
+	margin: 0;
+}
+
+#messages::before {
+    content: '';
+    position: absolute;
+    width: 65vw;
+    height: 80vh;
+    /* top: 5vh; */
+    /* right: 0; */
+    z-index: 2;
+    box-shadow: 0px 18px 30px -15px rgba(0,0,0,.5) inset;
+}
+
+#messages::after {
+    content: '';
+    position: absolute;
+    width: 65vw;
+    height: 80vh;
+    bottom: calc(10vh + 10px);
+    /* right: 0; */
+    z-index: 2;
+    box-shadow: 0px -10px 30px -15px #000 inset;
+}
+
+.control {
+	width:100%;
+	padding-left: 30px;
+	padding-right: 30px;
+}

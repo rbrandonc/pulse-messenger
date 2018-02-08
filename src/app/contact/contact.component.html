@@ -1,0 +1,17 @@
+<article class="media" [class.selected]='selected'>
+  <figure class="media-left">
+    <p class="image is-48x48">
+      <img src="{{imageSource()}}">
+    </p>
+  </figure>
+
+  <div class="media-content">
+    <div class="content has-text-light">
+      <p>
+        <strong class='has-text-white'>{{ contact.name }}</strong> <small>{{ contact.elapsed }}</small>
+        <br>
+        <small>{{ contact.desc }}</small>
+      </p>
+    </div>
+  </div>
+</article>
